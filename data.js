@@ -22,8 +22,13 @@ map.set(course2, { courseId: "level 2" }); //we can set another object as a key
 // console.log(map.has(course1)); // this has method checks that is this element exist or not ..if exist it will return a boolean
 // map.forEach((value,key) =>{console.log('key:',key,'value:',value);}) // for iteration there is only foreach method works
 
-map.forEach((value, key) => (key.name = "sohoz sorol simple" + key.name));
+// map.forEach((value, key) => (key.name = "sohoz sorol simple" + key.name));
 
 // console.log(map.keys()); //reture a iterator
 // console.log([...map.keys()]); //return an array (we can spread a iterator)
-console.log([...map.values()]); //return an array (we can spread a iterator)
+// console.log([...map.values()]); //return an array (we can spread a iterator)
+
+// for (let key of map.keys()) {
+//   key.name = "sohoz sorol simple" + key.name;
+// }
+console.log(map.entries());
