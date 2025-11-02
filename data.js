@@ -7,12 +7,17 @@
 const course1 = { name: "programmin hero" };
 const course2 = { name: "Next level web development" };
 
-const map = new Map();
+const courses = [
+  [course1, "level 1"],   //this a 2D array or matrix
+  [course2, "level 2"],
+];
+
+const map = new Map(courses);
 
 // map.set(1, "programming hero");
 // map.set(false, "programming hero"); //if this is also a boolean then it will remain an object
-map.set(course1, { courseId: "level 1" }); //we can set another object as a key
-map.set(course2, { courseId: "level 2" }); //we can set another object as a key
+// map.set(course1, { courseId: "level 1" }); //we can set another object as a key
+// map.set(course2, { courseId: "level 2" }); //we can set another object as a key
 
 // map.clear(); // for clearing everything
 // console.log(map.size); //map.size counts how many element are there in the map
@@ -31,4 +36,4 @@ map.set(course2, { courseId: "level 2" }); //we can set another object as a key
 // for (let key of map.keys()) {
 //   key.name = "sohoz sorol simple" + key.name;
 // }
-console.log(map.entries());
+console.log(map);
