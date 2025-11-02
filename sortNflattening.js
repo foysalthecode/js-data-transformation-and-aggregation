@@ -17,6 +17,9 @@ const tagsFromPosts = [
   ["javascript", "html", "css"],
 ];
 
+const filterdTags = [...new Set(tagsFromPosts.flat())];
+console.log(filterdTags);
+
 //some
 const currentUserRoles = ["user", "editor"];
 const featureAccessRoles = ["Admin", "Manager"];
