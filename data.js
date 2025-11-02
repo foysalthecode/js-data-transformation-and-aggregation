@@ -24,4 +24,6 @@ map.set(course2, { courseId: "level 2" }); //we can set another object as a key
 
 map.forEach((value, key) => (key.name = "sohoz sorol simple" + key.name));
 
-console.log(map);
+// console.log(map.keys()); //reture a iterator
+// console.log([...map.keys()]); //return an array (we can spread a iterator)
+console.log([...map.values()]); //return an array (we can spread a iterator)
