@@ -114,4 +114,4 @@ const topElectronicData = rawApiData
     return {name: item.productName}
   });
 
-console.log(topElectronicData);
+// console.log(topElectronicData);
